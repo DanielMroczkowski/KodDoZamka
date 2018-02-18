@@ -1,0 +1,7 @@
+vhdl work "mux32to8.vhd"
+vhdl work "module1z4.vhd"
+vhdl work "mod4.vhd"
+vhdl work "clock_div.vhd"
+vhdl work "wyswietlacz.vhd"
+vhdl work "KEYPAD.vhd"
+vhdl work "Main.vhd"

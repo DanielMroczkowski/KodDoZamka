@@ -1,0 +1,43 @@
+NET "clk" LOC="V10"; # SW1
+NET "reset" LOC="T10"; # SW0
+
+NET "led_out(0)" LOC="U16"; # 
+NET "led_out(1)" LOC="V16"; # 
+NET "led_out(2)" LOC="U15"; #
+NET "led_out(3)" LOC="V15"; # 
+NET "led_out(4)" LOC="M11"; # 
+
+NET "JA(0)" LOC="T12"; # 
+NET "JA(1)" LOC="V12"; #
+NET "JA(2)" LOC="N10"; # 
+NET "JA(3)" LOC="P11"; # 
+NET "JA(7)" LOC="V11"; #
+NET "JA(6)" LOC="U11"; # 
+NET "JA(5)" LOC="N9"; # 
+NET "JA(4)" LOC="M10"; # 
+
+
+
+#NET "a" LOC="T9"; # SW1
+#NET "b" LOC="T10"; # SW0
+#NET "y_and" LOC="M11"; # LD4
+#NET "y_nand" LOC="V15"; # LD3
+#NET "y_or" LOC="U15"; # LD2
+#NET "y_nor" LOC="V16"; # LD1
+#NET "y_xor" LOC="U16"; # LD0
+
+#wyswietlacz
+NET "wyj_anody(0)" LOC="N16";
+NET "wyj_anody(1)" LOC="N15";
+NET "wyj_anody(2)" LOC="P18";
+NET "wyj_anody(3)" LOC="P17";
+NET "wyj_katody(0)" LOC="T17";	#a
+NET "wyj_katody(1)" LOC="T18";   #b
+NET "wyj_katody(2)" LOC="U17";	#c
+NET "wyj_katody(3)" LOC="U18";	#d
+NET "wyj_katody(4)" LOC="M14";	#e
+NET "wyj_katody(5)" LOC="N14";	#f
+NET "wyj_katody(6)" LOC="L14";	#g
+NET "wyj_katody(7)" LOC="M13";	#dot
+#NET "clk" LOC="V10";
+#NET "reset" LOC="T10";

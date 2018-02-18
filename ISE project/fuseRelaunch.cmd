@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Labuprog/E5T1S1/KodDoZamka/klaw_isim_beh.exe" -prj "C:/Labuprog/E5T1S1/KodDoZamka/klaw_beh.prj" "work.klaw" 

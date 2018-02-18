@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Labuprog\E5T1S1\KodDoZamka\Main.ncd
+OUTFILE=C:\Labuprog\E5T1S1\KodDoZamka\Main.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Labuprog\E5T1S1\KodDoZamka
+LICENSE=WebPack
+USER_INFO=208317219_0_0_612

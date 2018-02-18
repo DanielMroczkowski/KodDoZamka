@@ -1,0 +1,634 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Main"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Labuprog\E5T1S1\KodDoZamka\mux32to8.vhd" into library work
+Parsing entity <mux32to8>.
+Parsing architecture <Behavioral> of entity <mux32to8>.
+Parsing VHDL file "C:\Labuprog\E5T1S1\KodDoZamka\module1z4.vhd" into library work
+Parsing entity <module1z4>.
+Parsing architecture <Behavioral> of entity <module1z4>.
+Parsing VHDL file "C:\Labuprog\E5T1S1\KodDoZamka\mod4.vhd" into library work
+Parsing entity <mod4>.
+Parsing architecture <Behavioral> of entity <mod4>.
+Parsing VHDL file "C:\Labuprog\E5T1S1\KodDoZamka\clock_div.vhd" into library work
+Parsing entity <clock_div>.
+Parsing architecture <Behavioral> of entity <clock_div>.
+Parsing VHDL file "C:\Labuprog\E5T1S1\KodDoZamka\wyswietlacz.vhd" into library work
+Parsing entity <wyswietlacz>.
+Parsing architecture <BEHAVIORAL> of entity <wyswietlacz>.
+Parsing VHDL file "C:\Labuprog\E5T1S1\KodDoZamka\KEYPAD.vhd" into library work
+Parsing entity <KEYPAD>.
+Parsing architecture <Behavioral> of entity <keypad>.
+Parsing VHDL file "C:\Labuprog\E5T1S1\KodDoZamka\Main.vhd" into library work
+Parsing entity <Main>.
+Parsing architecture <Behavioral> of entity <main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Main> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <KEYPAD> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <wyswietlacz> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <clock_div> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:439 - "C:\Labuprog\E5T1S1\KodDoZamka\wyswietlacz.vhd" Line 53: Formal port sel of mode inout cannot be associated with actual port sel of mode out
+INFO:HDLCompiler:1408 - "C:\Labuprog\E5T1S1\KodDoZamka\mod4.vhd" Line 36. sel is declared here
+
+Elaborating entity <mod4> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:1408 - "C:\Labuprog\E5T1S1\KodDoZamka\mod4.vhd" Line 36. sel is declared here
+
+Elaborating entity <module1z4> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <mux32to8> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Labuprog\E5T1S1\KodDoZamka\mux32to8.vhd" Line 51: d should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Labuprog\E5T1S1\KodDoZamka\mux32to8.vhd" Line 52: d1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Labuprog\E5T1S1\KodDoZamka\mux32to8.vhd" Line 53: d2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Labuprog\E5T1S1\KodDoZamka\mux32to8.vhd" Line 54: d3 should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "C:\Labuprog\E5T1S1\KodDoZamka\Main.vhd" Line 171. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Main>.
+    Related source file is "C:\Labuprog\E5T1S1\KodDoZamka\Main.vhd".
+    Found 8-bit register for signal <Mdana1>.
+    Found 8-bit register for signal <Mdana2>.
+    Found 8-bit register for signal <Mdana3>.
+    Found 5-bit register for signal <led_out>.
+    Found 3-bit register for signal <s>.
+    Found finite state machine <FSM_0> for signal <s>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit 5-to-1 multiplexer for signal <s[2]_X_5_o_wide_mux_44_OUT> created at line 109.
+    Found 8-bit 5-to-1 multiplexer for signal <s[2]_X_5_o_wide_mux_46_OUT> created at line 109.
+    Found 8-bit 5-to-1 multiplexer for signal <s[2]_X_5_o_wide_mux_47_OUT> created at line 109.
+    Found 8-bit 5-to-1 multiplexer for signal <s[2]_X_5_o_wide_mux_48_OUT> created at line 109.
+    Summary:
+	inferred  29 D-type flip-flop(s).
+	inferred  24 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Main> synthesized.
+
+Synthesizing Unit <KEYPAD>.
+    Related source file is "C:\Labuprog\E5T1S1\KodDoZamka\KEYPAD.vhd".
+    Found 20-bit register for signal <sclk>.
+    Found 4-bit register for signal <DecodeOut>.
+    Found 4-bit register for signal <Col>.
+    Found 20-bit adder for signal <sclk[19]_GND_6_o_add_47_OUT> created at line 135.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred  13 Multiplexer(s).
+Unit <KEYPAD> synthesized.
+
+Synthesizing Unit <wyswietlacz>.
+    Related source file is "C:\Labuprog\E5T1S1\KodDoZamka\wyswietlacz.vhd".
+INFO:Xst:3210 - "C:\Labuprog\E5T1S1\KodDoZamka\wyswietlacz.vhd" line 102: Output port <G> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Labuprog\E5T1S1\KodDoZamka\wyswietlacz.vhd" line 105: Output port <P> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <wyswietlacz> synthesized.
+
+Synthesizing Unit <clock_div>.
+    Related source file is "C:\Labuprog\E5T1S1\KodDoZamka\clock_div.vhd".
+    Found 19-bit register for signal <counter>.
+    Found 1-bit register for signal <temporal>.
+    Found 19-bit adder for signal <counter[18]_GND_10_o_add_1_OUT> created at line 52.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clock_div> synthesized.
+
+Synthesizing Unit <mod4>.
+    Related source file is "C:\Labuprog\E5T1S1\KodDoZamka\mod4.vhd".
+    Found 2-bit register for signal <SEL>.
+    Found 2-bit adder for signal <SEL[1]_GND_11_o_add_0_OUT> created at line 47.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <mod4> synthesized.
+
+Synthesizing Unit <module1z4>.
+    Related source file is "C:\Labuprog\E5T1S1\KodDoZamka\module1z4.vhd".
+    Found 4x4-bit Read Only RAM for signal <Wyj>
+    Summary:
+	inferred   1 RAM(s).
+Unit <module1z4> synthesized.
+
+Synthesizing Unit <mux32to8>.
+    Related source file is "C:\Labuprog\E5T1S1\KodDoZamka\mux32to8.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <wyjsciemux> created at line 50.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux32to8> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 3
+ 19-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 1
+# Registers                                            : 10
+ 1-bit register                                        : 1
+ 19-bit register                                       : 1
+ 2-bit register                                        : 1
+ 20-bit register                                       : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 1
+ 8-bit register                                        : 3
+# Multiplexers                                         : 39
+ 19-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 13
+ 5-bit 2-to-1 multiplexer                              : 5
+ 5-bit 5-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 15
+ 8-bit 4-to-1 multiplexer                              : 1
+ 8-bit 5-to-1 multiplexer                              : 3
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <KEYPAD>.
+The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
+Unit <KEYPAD> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock_div>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <clock_div> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mod4>.
+The following registers are absorbed into counter <SEL>: 1 register on signal <SEL>.
+Unit <mod4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <module1z4>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Wyj> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Wej>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Wyj>           |          |
+    -----------------------------------------------------------------------
+Unit <module1z4> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 3
+ 19-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+# Multiplexers                                         : 38
+ 4-bit 2-to-1 multiplexer                              : 13
+ 5-bit 2-to-1 multiplexer                              : 5
+ 5-bit 5-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 15
+ 8-bit 4-to-1 multiplexer                              : 1
+ 8-bit 5-to-1 multiplexer                              : 3
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <s[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 000
+ s1    | 001
+ s2    | 010
+ s3    | 011
+ s4    | 100
+-------------------
+
+Optimizing unit <Main> ...
+WARNING:Xst:1710 - FF/Latch <Mdana1_6> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mdana1_7> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mdana2_7> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mdana3_1> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mdana3_3> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mdana3_7> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mdana1_6> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mdana1_7> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mdana2_7> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mdana3_1> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mdana3_3> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mdana3_7> (without init value) has a constant value of 1 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <KEYPAD> ...
+INFO:Xst:2261 - The FF/Latch <Mdana1_0> in Unit <Main> is equivalent to the following 8 FFs/Latches, which will be removed : <Mdana1_1> <Mdana1_2> <Mdana1_3> <Mdana1_4> <Mdana1_5> <Mdana2_6> <Mdana3_0> <Mdana3_5> 
+INFO:Xst:2261 - The FF/Latch <Mdana2_0> in Unit <Main> is equivalent to the following 4 FFs/Latches, which will be removed : <Mdana2_4> <Mdana2_5> <Mdana3_4> <Mdana3_6> 
+INFO:Xst:2261 - The FF/Latch <Mdana2_1> in Unit <Main> is equivalent to the following 3 FFs/Latches, which will be removed : <Mdana2_2> <Mdana2_3> <Mdana3_2> 
+INFO:Xst:3203 - The FF/Latch <Mdana2_1> in Unit <Main> is the opposite to the following FF/Latch, which will be removed : <led_out_4> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Main, actual ratio is 1.
+FlipFlop C0/sclk_3 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 62
+ Flip-Flops                                            : 62
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 240
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 37
+#      LUT2                        : 10
+#      LUT3                        : 6
+#      LUT4                        : 11
+#      LUT5                        : 14
+#      LUT6                        : 77
+#      MUXCY                       : 37
+#      VCC                         : 1
+#      XORCY                       : 39
+# FlipFlops/Latches                : 62
+#      FD                          : 24
+#      FDC                         : 26
+#      FDCE                        : 1
+#      FDE                         : 8
+#      FDP                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 5
+#      OBUF                        : 21
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              62  out of  18224     0%  
+ Number of Slice LUTs:                  162  out of   9112     1%  
+    Number used as Logic:               162  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    164
+   Number with an unused Flip Flop:     102  out of    164    62%  
+   Number with an unused LUT:             2  out of    164     1%  
+   Number of fully used LUT-FF pairs:    60  out of    164    36%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    232    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 60    |
+C1/XLXI_1/temporal                 | NONE(C1/XLXI_2/SEL_0)  | 2     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.932ns (Maximum Frequency: 202.778MHz)
+   Minimum input arrival time before clock: 4.606ns
+   Maximum output required time after clock: 4.968ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.932ns (frequency: 202.778MHz)
+  Total number of paths / destination ports: 3532 / 69
+-------------------------------------------------------------------------
+Delay:               4.932ns (Levels of Logic = 4)
+  Source:            C0/sclk_5 (FF)
+  Destination:       C0/DecodeOut_3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: C0/sclk_5 to C0/DecodeOut_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.898  C0/sclk_5 (C0/sclk_5)
+     LUT4:I0->O            6   0.203   0.973  C0/sclk[19]_GND_6_o_equal_1_o<19>11 (C0/sclk[19]_GND_6_o_equal_1_o<19>1)
+     LUT6:I3->O           21   0.205   1.114  C0/sclk[19]_GND_6_o_equal_27_o<19>1 (C0/sclk[19]_GND_6_o_equal_27_o)
+     LUT6:I5->O            1   0.205   0.580  C0/Mmux_DecodeOut[3]_DecodeOut[3]_mux_69_OUT51 (C0/DecodeOut[3]_DecodeOut[3]_mux_69_OUT<3>)
+     LUT3:I2->O            1   0.205   0.000  C0/DecodeOut_3_dpot (C0/DecodeOut_3_dpot)
+     FDE:D                     0.102          C0/DecodeOut_3
+    ----------------------------------------
+    Total                      4.932ns (1.367ns logic, 3.565ns route)
+                                       (27.7% logic, 72.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'C1/XLXI_1/temporal'
+  Clock period: 2.216ns (frequency: 451.233MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.216ns (Levels of Logic = 1)
+  Source:            C1/XLXI_2/SEL_0 (FF)
+  Destination:       C1/XLXI_2/SEL_0 (FF)
+  Source Clock:      C1/XLXI_1/temporal rising
+  Destination Clock: C1/XLXI_1/temporal rising
+
+  Data Path: C1/XLXI_2/SEL_0 to C1/XLXI_2/SEL_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.447   0.882  C1/XLXI_2/SEL_0 (C1/XLXI_2/SEL_0)
+     INV:I->O              1   0.206   0.579  C1/XLXI_2/Mcount_SEL_xor<0>11_INV_0 (Result<0>1)
+     FD:D                      0.102          C1/XLXI_2/SEL_0
+    ----------------------------------------
+    Total                      2.216ns (0.755ns logic, 1.461ns route)
+                                       (34.1% logic, 65.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 57 / 34
+-------------------------------------------------------------------------
+Offset:              4.606ns (Levels of Logic = 4)
+  Source:            JA<7> (PAD)
+  Destination:       C0/DecodeOut_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: JA<7> to C0/DecodeOut_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.962  JA_7_IBUF (JA_7_IBUF)
+     LUT4:I0->O            1   0.203   0.924  C0/_n0309_inv_SW0 (N10)
+     LUT5:I0->O            4   0.203   0.788  C0/_n0309_inv_rstpot (C0/_n0309_inv_rstpot)
+     LUT3:I1->O            1   0.203   0.000  C0/DecodeOut_3_dpot (C0/DecodeOut_3_dpot)
+     FDE:D                     0.102          C0/DecodeOut_3
+    ----------------------------------------
+    Total                      4.606ns (1.933ns logic, 2.673ns route)
+                                       (42.0% logic, 58.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 23 / 16
+-------------------------------------------------------------------------
+Offset:              4.775ns (Levels of Logic = 2)
+  Source:            Mdana1_0 (FF)
+  Destination:       wyj_katody<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Mdana1_0 to wyj_katody<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              6   0.447   0.973  Mdana1_0 (Mdana1_0)
+     LUT4:I1->O            1   0.205   0.579  C1/XLXI_4/Mmux_wyjsciemux71 (wyj_katody_6_OBUF)
+     OBUF:I->O                 2.571          wyj_katody_6_OBUF (wyj_katody<6>)
+    ----------------------------------------
+    Total                      4.775ns (3.223ns logic, 1.552ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'C1/XLXI_1/temporal'
+  Total number of paths / destination ports: 22 / 11
+-------------------------------------------------------------------------
+Offset:              4.968ns (Levels of Logic = 2)
+  Source:            C1/XLXI_2/SEL_0 (FF)
+  Destination:       wyj_katody<5> (PAD)
+  Source Clock:      C1/XLXI_1/temporal rising
+
+  Data Path: C1/XLXI_2/SEL_0 to wyj_katody<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.447   1.130  C1/XLXI_2/SEL_0 (C1/XLXI_2/SEL_0)
+     LUT4:I0->O            2   0.203   0.616  C1/XLXI_4/Mmux_wyjsciemux61 (wyj_katody_0_OBUF)
+     OBUF:I->O                 2.571          wyj_katody_0_OBUF (wyj_katody<0>)
+    ----------------------------------------
+    Total                      4.968ns (3.221ns logic, 1.747ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock C1/XLXI_1/temporal
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+C1/XLXI_1/temporal|    2.216|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.932|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.29 secs
+ 
+--> 
+
+Total memory usage is 282844 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

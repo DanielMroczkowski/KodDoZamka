@@ -1,0 +1,32 @@
+Command line:
+   klaw_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49555
+
+Thu Jan 25 09:22:13 2018
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 677.343 Meg
+
+ Total Signals          : 9
+ Total Nets             : 33
+ Total Signal Drivers   : 5
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 3
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 412
+Total Line Count : 44
+Total Line Count : 44
+Total Line Count : 44
+Total Line Count : 44
+
+ Total Simulation Time: 5.07003 sec
+
+ Current Memory Usage: 677.343 Meg
+
+Thu Jan 25 09:24:32 2018
+
